@@ -4,11 +4,13 @@ README.md:
 	touch README.md
 
 title:
-	echo "#Guessing Game" > README.md
-	echo "##Peer-graded Assignment: Bash, Make, Git, and GitHub" >> README.md
+	echo "# Guessing Game" > README.md
+	echo "## Peer-graded Assignment: Bash, Make, Git, and GitHub" >> README.md
+	echo "" >> README.md
 
 datetime:
 	echo "make was ran on: $$(date)" >> README.md
+	echo "" >> README.md
 
 lines: guessinggame.sh
 	echo "there are $$(wc -l guessinggame.sh | egrep -o "[0-9]+") \
